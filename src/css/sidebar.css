@@ -1,0 +1,66 @@
+.sidebar{
+  
+    /* padding-top: 10px; */
+    /* display: none; */
+    /* width: 100px; */
+    /* width: min-content; */
+    position: absolute;
+    /* border-radius: 4px ; */
+    
+  }
+  
+  .sidebar nav{
+    height: 94vh; 
+  }
+  
+
+
+  .sidebar a{
+
+    text-decoration: none;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    color: white;
+  }
+/* 
+  .sidebar:hover {
+
+    width: 100px; 
+
+  } */
+  /*::before will put text before icon vice versa ::after*/
+  .sidebar:hover    a:nth-of-type(1)::after { content: " Users "; }
+
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+
+    .sidebar nav{
+      /* display: none; */     
+      position: absolute;
+      border-radius: 0 14px 14px 0 ;
+      padding: 13px 0;
+     opacity: 0.4;
+    }
+
+    .sidebar nav:hover{
+      opacity: 1; 
+    }
+
+    .sidebar nav:hover{
+      opacity: 1; 
+    }
+
+
+    .sidebar nav{
+  
+      /* display: flex;
+      flex-direction: column; */
+      height: min-content; 
+   
+    }
+
+  
+  }
